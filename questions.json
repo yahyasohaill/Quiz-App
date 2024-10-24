@@ -1,0 +1,727 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Paris", "London", "Berlin", "Madrid"],
+    "answer": "Paris"
+  },
+  {
+    "question": "What is 2 + 2?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4"
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": "Jupiter"
+  },
+  {
+    "question": "Who wrote 'Hamlet'?",
+    "options": ["Charles Dickens", "Mark Twain", "William Shakespeare", "Jane Austen"],
+    "answer": "William Shakespeare"
+  },
+  {
+    "question": "What is the chemical symbol for water?",
+    "options": ["O2", "H2O", "CO2", "NaCl"],
+    "answer": "H2O"
+  },
+  {
+    "question": "What is the currency of Japan?",
+    "options": ["Yen", "Dollar", "Euro", "Pound"],
+    "answer": "Yen"
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "question": "What is the tallest mountain in the world?",
+    "options": ["K2", "Kangchenjunga", "Mount Everest", "Lhotse"],
+    "answer": "Mount Everest"
+  },
+  {
+    "question": "What is the smallest prime number?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2"
+  },
+  {
+    "question": "What is the main ingredient in guacamole?",
+    "options": ["Tomato", "Avocado", "Onion", "Pepper"],
+    "answer": "Avocado"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "answer": "Mars"
+  },
+  {
+    "question": "What is the capital of Italy?",
+    "options": ["Rome", "Milan", "Florence", "Venice"],
+    "answer": "Rome"
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "options": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Isaac Newton"],
+    "answer": "Alexander Fleming"
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?",
+    "options": ["Gold", "Iron", "Diamond", "Quartz"],
+    "answer": "Diamond"
+  },
+  {
+    "question": "What is the largest mammal in the world?",
+    "options": ["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
+    "answer": "Blue Whale"
+  },
+  {
+    "question": "Who is known as the Father of Geometry?",
+    "options": ["Pythagoras", "Euclid", "Archimedes", "Newton"],
+    "answer": "Euclid"
+  },
+  {
+    "question": "What is the speed of light?",
+    "options": ["300,000 km/s", "150,000 km/s", "1,000 km/s", "75,000 km/s"],
+    "answer": "300,000 km/s"
+  },
+  {
+    "question": "Which gas do plants absorb from the atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Carbon Dioxide"
+  },
+  {
+    "question": "What is the largest organ in the human body?",
+    "options": ["Heart", "Liver", "Skin", "Lungs"],
+    "answer": "Skin"
+  },
+  {
+    "question": "What is the longest river in the world?",
+    "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "answer": "Nile"
+  },
+  {
+    "question": "Which element has the chemical symbol 'O'?",
+    "options": ["Osmium", "Oxygen", "Gold", "Silver"],
+    "answer": "Oxygen"
+  },
+  {
+    "question": "Who was the first person to walk on the moon?",
+    "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
+    "answer": "Neil Armstrong"
+  },
+  {
+    "question": "What is the primary language spoken in Brazil?",
+    "options": ["Spanish", "Portuguese", "French", "English"],
+    "answer": "Portuguese"
+  },
+  {
+    "question": "What is the name of the fairy in Peter Pan?",
+    "options": ["Tinkerbell", "Cinderella", "Aurora", "Snow White"],
+    "answer": "Tinkerbell"
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "answer": "Canberra"
+  },
+  {
+    "question": "Which instrument is used to measure temperature?",
+    "options": ["Barometer", "Thermometer", "Hygrometer", "Anemometer"],
+    "answer": "Thermometer"
+  },
+  {
+    "question": "Who is known for developing the theory of relativity?",
+    "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+    "answer": "Albert Einstein"
+  },
+  {
+    "question": "What is the capital of Egypt?",
+    "options": ["Cairo", "Alexandria", "Giza", "Luxor"],
+    "answer": "Cairo"
+  },
+  {
+    "question": "In which continent is Egypt located?",
+    "options": ["Asia", "Africa", "Europe", "South America"],
+    "answer": "Africa"
+  },
+  {
+    "question": "What is the name of the largest desert in the world?",
+    "options": ["Sahara", "Arabian", "Gobi", "Kalahari"],
+    "answer": "Sahara"
+  },
+  {
+    "question": "Which planet is closest to the Sun?",
+    "options": ["Earth", "Venus", "Mercury", "Mars"],
+    "answer": "Mercury"
+  },
+  {
+    "question": "What is the boiling point of water?",
+    "options": ["100°C", "90°C", "80°C", "110°C"],
+    "answer": "100°C"
+  },
+  {
+    "question": "Which planet is known for its rings?",
+    "options": ["Uranus", "Neptune", "Saturn", "Jupiter"],
+    "answer": "Saturn"
+  },
+  {
+    "question": "What is the capital of Canada?",
+    "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "answer": "Ottawa"
+  },
+  {
+    "question": "What is the process by which plants make their food?",
+    "options": ["Photosynthesis", "Respiration", "Digestion", "Transpiration"],
+    "answer": "Photosynthesis"
+  },
+  {
+    "question": "What is the hardest natural mineral?",
+    "options": ["Quartz", "Diamond", "Emerald", "Ruby"],
+    "answer": "Diamond"
+  },
+  {
+    "question": "Who invented the telephone?",
+    "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Albert Einstein"],
+    "answer": "Alexander Graham Bell"
+  },
+  {
+    "question": "What is the main gas found in the air we breathe?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Nitrogen"
+  },
+  {
+    "question": "What is the capital of Russia?",
+    "options": ["Moscow", "St. Petersburg", "Kiev", "Vilnius"],
+    "answer": "Moscow"
+  },
+  {
+    "question": "What is the tallest building in the world?",
+    "options": ["Burj Khalifa", "Shanghai Tower", "One World Trade Center", "Taipei 101"],
+    "answer": "Burj Khalifa"
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Au", "Ag", "Pb", "Fe"],
+    "answer": "Au"
+  },
+  {
+    "question": "Who was the first president of the United States?",
+    "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+    "answer": "George Washington"
+  },
+  {
+    "question": "What is the longest bone in the human body?",
+    "options": ["Femur", "Tibia", "Humerus", "Radius"],
+    "answer": "Femur"
+  },
+  {
+    "question": "What is the capital of Iceland?",
+    "options": ["Reykjavik", "Oslo", "Stockholm", "Helsinki"],
+    "answer": "Reykjavik"
+  },
+  {
+    "question": "What is the process of converting a liquid into vapor?",
+    "options": ["Condensation", "Evaporation", "Sublimation", "Deposition"],
+    "answer": "Evaporation"
+  },
+  {
+    "question": "What is the value of Pi (π) to two decimal places?",
+    "options": ["3.14", "3.16", "3.12", "3.18"],
+    "answer": "3.14"
+  },
+  {
+    "question": "What is the largest land animal?",
+    "options": ["Elephant", "Giraffe", "Hippopotamus", "Rhino"],
+    "answer": "Elephant"
+  },
+  {
+    "question": "What is the primary ingredient in sushi?",
+    "options": ["Rice", "Seaweed", "Fish", "Vegetables"],
+    "answer": "Rice"
+  },
+  {
+    "question": "What is the chemical formula for table salt?",
+    "options": ["NaCl", "KCl", "CaCl2", "MgCl2"],
+    "answer": "NaCl"
+  },
+  {
+    "question": "What is the second largest continent?",
+    "options": ["Africa", "Asia", "North America", "South America"],
+    "answer": "Africa"
+  },
+  {
+    "question": "What is the hardest natural material?",
+    "options": ["Diamond", "Sapphire", "Emerald", "Ruby"],
+    "answer": "Diamond"
+  },
+  {
+    "question": "What is the main component of the sun?",
+    "options": ["Oxygen", "Hydrogen", "Helium", "Carbon"],
+    "answer": "Hydrogen"
+  },
+  {
+    "question": "What is the largest mammal on land?",
+    "options": ["Elephant", "Giraffe", "White Rhino", "Hippopotamus"],
+    "answer": "Elephant"
+  },
+  {
+    "question": "What is the process by which cells divide?",
+    "options": ["Mitosis", "Meiosis", "Fission", "Fusion"],
+    "answer": "Mitosis"
+  },
+  {
+    "question": "What is the chemical symbol for silver?",
+    "options": ["Ag", "Au", "Pb", "Fe"],
+    "answer": "Ag"
+  },
+  {
+    "question": "What is the capital of Argentina?",
+    "options": ["Buenos Aires", "Santiago", "Lima", "Bogotá"],
+    "answer": "Buenos Aires"
+  },
+  {
+    "question": "What is the most widely spoken language in the world?",
+    "options": ["English", "Mandarin", "Spanish", "Hindi"],
+    "answer": "Mandarin"
+  },
+  {
+    "question": "What is the term for animals that eat both plants and meat?",
+    "options": ["Herbivores", "Carnivores", "Omnivores", "Detritivores"],
+    "answer": "Omnivores"
+  },
+  {
+    "question": "What is the largest volcano in the world?",
+    "options": ["Kilauea", "Mauna Loa", "Mount St. Helens", "Mount Fuji"],
+    "answer": "Mauna Loa"
+  },
+  {
+    "question": "What is the primary function of red blood cells?",
+    "options": ["Fight infection", "Transport oxygen", "Clot blood", "Produce antibodies"],
+    "answer": "Transport oxygen"
+  },
+  {
+    "question": "What is the main gas in the Earth's atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Nitrogen"
+  },
+  {
+    "question": "What is the chemical symbol for iron?",
+    "options": ["Fe", "Ir", "I", "In"],
+    "answer": "Fe"
+  },
+  {
+    "question": "What is the capital of New Zealand?",
+    "options": ["Auckland", "Wellington", "Christchurch", "Hamilton"],
+    "answer": "Wellington"
+  },
+  {
+    "question": "What is the most common element in the universe?",
+    "options": ["Oxygen", "Carbon", "Hydrogen", "Nitrogen"],
+    "answer": "Hydrogen"
+  },
+  {
+    "question": "What is the largest species of shark?",
+    "options": ["Great White Shark", "Hammerhead Shark", "Tiger Shark", "Whale Shark"],
+    "answer": "Whale Shark"
+  },
+  {
+    "question": "What is the term for a group of wolves?",
+    "options": ["Pack", "Herd", "Gaggle", "Murder"],
+    "answer": "Pack"
+  },
+  {
+    "question": "What is the capital of Greece?",
+    "options": ["Athens", "Rome", "Cairo", "Istanbul"],
+    "answer": "Athens"
+  },
+  {
+    "question": "What is the pH level of pure water?",
+    "options": ["5", "7", "9", "11"],
+    "answer": "7"
+  },
+  {
+    "question": "What is the term for animals that primarily eat plants?",
+    "options": ["Carnivores", "Herbivores", "Omnivores", "Detritivores"],
+    "answer": "Herbivores"
+  },
+  {
+    "question": "What is the main source of energy for the Earth?",
+    "options": ["The Moon", "The Sun", "Volcanoes", "Geothermal Heat"],
+    "answer": "The Sun"
+  },
+  {
+    "question": "What is the capital of South Korea?",
+    "options": ["Seoul", "Busan", "Incheon", "Daegu"],
+    "answer": "Seoul"
+  },
+  {
+    "question": "What is the distance around the Earth called?",
+    "options": ["Circumference", "Diameter", "Radius", "Area"],
+    "answer": "Circumference"
+  },
+  {
+    "question": "What is the scientific study of the atmosphere called?",
+    "options": ["Meteorology", "Astronomy", "Geology", "Oceanography"],
+    "answer": "Meteorology"
+  },
+  {
+    "question": "What is the largest organ inside the human body?",
+    "options": ["Heart", "Liver", "Brain", "Lungs"],
+    "answer": "Liver"
+  },
+  {
+    "question": "What is the capital of Spain?",
+    "options": ["Madrid", "Barcelona", "Valencia", "Seville"],
+    "answer": "Madrid"
+  },
+  {
+    "question": "What is the process by which water vapor turns into liquid water?",
+    "options": ["Condensation", "Evaporation", "Sublimation", "Precipitation"],
+    "answer": "Condensation"
+  },
+  {
+    "question": "What is the primary purpose of mitochondria in cells?",
+    "options": ["Energy production", "Protein synthesis", "DNA replication", "Waste removal"],
+    "answer": "Energy production"
+  },
+  {
+    "question": "What is the largest island in the world?",
+    "options": ["Australia", "Greenland", "New Guinea", "Borneo"],
+    "answer": "Greenland"
+  },
+  {
+    "question": "What is the capital of Kenya?",
+    "options": ["Nairobi", "Mombasa", "Kisumu", "Nakuru"],
+    "answer": "Nairobi"
+  },
+  {
+    "question": "What is the currency used in the European Union?",
+    "options": ["Euro", "Pound", "Dollar", "Franc"],
+    "answer": "Euro"
+  },
+  {
+    "question": "What is the scientific name for the common house cat?",
+    "options": ["Canis lupus", "Felis catus", "Equus ferus", "Bos taurus"],
+    "answer": "Felis catus"
+  },
+  {
+    "question": "What is the main function of the large intestine?",
+    "options": ["Nutrient absorption", "Water absorption", "Waste storage", "Digestion"],
+    "answer": "Water absorption"
+  },
+  {
+    "question": "What is the capital of Turkey?",
+    "options": ["Ankara", "Istanbul", "Izmir", "Bursa"],
+    "answer": "Ankara"
+  },
+  {
+    "question": "What is the basic unit of life?",
+    "options": ["Tissue", "Organ", "Cell", "Organism"],
+    "answer": "Cell"
+  },
+  {
+    "question": "What is the primary gas found in natural gas?",
+    "options": ["Methane", "Ethane", "Propane", "Butane"],
+    "answer": "Methane"
+  },
+  {
+    "question": "What is the capital of Sweden?",
+    "options": ["Oslo", "Helsinki", "Stockholm", "Copenhagen"],
+    "answer": "Stockholm"
+  },
+  {
+    "question": "What is the largest species of bear?",
+    "options": ["Polar Bear", "Grizzly Bear", "Black Bear", "Giant Panda"],
+    "answer": "Polar Bear"
+  },
+  {
+    "question": "What is the formula for calculating the area of a circle?",
+    "options": ["πr²", "2πr", "πd", "2r"],
+    "answer": "πr²"
+  },
+  {
+    "question": "What is the capital of Portugal?",
+    "options": ["Lisbon", "Madrid", "Rome", "Paris"],
+    "answer": "Lisbon"
+  },
+  {
+    "question": "What is the hardest rock?",
+    "options": ["Igneous", "Sedimentary", "Metamorphic", "Granite"],
+    "answer": "Igneous"
+  },
+  {
+    "question": "What is the primary function of the respiratory system?",
+    "options": ["Circulation", "Breathing", "Digestion", "Excretion"],
+    "answer": "Breathing"
+  },
+  {
+    "question": "What is the capital of Vietnam?",
+    "options": ["Hanoi", "Ho Chi Minh City", "Da Nang", "Nha Trang"],
+    "answer": "Hanoi"
+  },
+  {
+    "question": "What is the primary pigment found in green plants?",
+    "options": ["Carotene", "Chlorophyll", "Xanthophyll", "Melanin"],
+    "answer": "Chlorophyll"
+  },
+  {
+    "question": "What is the capital of Finland?",
+    "options": ["Helsinki", "Oslo", "Stockholm", "Tallinn"],
+    "answer": "Helsinki"
+  },
+  {
+    "question": "What is the scientific term for a fear of spiders?",
+    "options": ["Arachnophobia", "Acrophobia", "Claustrophobia", "Nyctophobia"],
+    "answer": "Arachnophobia"
+  },
+  {
+    "question": "What is the capital of Malaysia?",
+    "options": ["Kuala Lumpur", "Singapore", "Bangkok", "Jakarta"],
+    "answer": "Kuala Lumpur"
+  },
+  {
+    "question": "What is the primary function of the kidneys?",
+    "options": ["Filtration of blood", "Hormone production", "Nutrient absorption", "Digestion"],
+    "answer": "Filtration of blood"
+  },
+  {
+    "question": "What is the capital of the Netherlands?",
+    "options": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht"],
+    "answer": "Amsterdam"
+  },
+  {
+    "question": "What is the main component of the Earth's crust?",
+    "options": ["Iron", "Aluminum", "Silicon", "Oxygen"],
+    "answer": "Silicon"
+  },
+  {
+    "question": "What is the capital of Chile?",
+    "options": ["Santiago", "Valparaíso", "Concepción", "La Serena"],
+    "answer": "Santiago"
+  },
+  {
+    "question": "What is the most abundant gas in the Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
+    "answer": "Nitrogen"
+  },
+  {
+    "question": "What is the capital of Belgium?",
+    "options": ["Brussels", "Antwerp", "Ghent", "Bruges"],
+    "answer": "Brussels"
+  },
+  {
+    "question": "What is the primary source of energy for the human body?",
+    "options": ["Fats", "Carbohydrates", "Proteins", "Vitamins"],
+    "answer": "Carbohydrates"
+  },
+  {
+    "question": "What is the capital of Nigeria?",
+    "options": ["Abuja", "Lagos", "Port Harcourt", "Kano"],
+    "answer": "Abuja"
+  },
+  {
+    "question": "What is the scientific study of insects called?",
+    "options": ["Entomology", "Ornithology", "Herpetology", "Mammalogy"],
+    "answer": "Entomology"
+  },
+  {
+    "question": "What is the capital of Peru?",
+    "options": ["Lima", "Cusco", "Arequipa", "Trujillo"],
+    "answer": "Lima"
+  },
+  {
+    "question": "What is the primary function of the skeletal system?",
+    "options": ["Support", "Movement", "Protection", "Blood production"],
+    "answer": "Support"
+  },
+  {
+    "question": "What is the capital of Colombia?",
+    "options": ["Bogotá", "Medellín", "Cali", "Barranquilla"],
+    "answer": "Bogotá"
+  },
+  {
+    "question": "What is the chemical symbol for potassium?",
+    "options": ["K", "P", "Pt", "Po"],
+    "answer": "K"
+  },
+  {
+    "question": "What is the capital of Hungary?",
+    "options": ["Budapest", "Vienna", "Prague", "Bratislava"],
+    "answer": "Budapest"
+  },
+  {
+    "question": "What is the largest internal organ in the human body?",
+    "options": ["Heart", "Liver", "Lungs", "Brain"],
+    "answer": "Liver"
+  },
+  {
+    "question": "What is the capital of the Czech Republic?",
+    "options": ["Prague", "Bratislava", "Warsaw", "Budapest"],
+    "answer": "Prague"
+  },
+  {
+    "question": "What is the scientific term for the process of learning by association?",
+    "options": ["Operant conditioning", "Classical conditioning", "Observational learning", "Cognitive learning"],
+    "answer": "Classical conditioning"
+  },
+  {
+    "question": "What is the capital of Slovakia?",
+    "options": ["Bratislava", "Prague", "Budapest", "Vienna"],
+    "answer": "Bratislava"
+  },
+  {
+    "question": "What is the primary function of the pancreas?",
+    "options": ["Insulin production", "Bile production", "Digestive enzyme production", "Blood filtration"],
+    "answer": "Insulin production"
+  },
+  {
+    "question": "What is the capital of Serbia?",
+    "options": ["Belgrade", "Budapest", "Zagreb", "Sarajevo"],
+    "answer": "Belgrade"
+  },
+  {
+    "question": "What is the most common blood type in humans?",
+    "options": ["A", "B", "AB", "O"],
+    "answer": "O"
+  },
+  {
+    "question": "What is the capital of Croatia?",
+    "options": ["Zagreb", "Split", "Dubrovnik", "Rijeka"],
+    "answer": "Zagreb"
+  },
+  {
+    "question": "What is the primary function of the liver?",
+    "options": ["Detoxification", "Digestion", "Respiration", "Circulation"],
+    "answer": "Detoxification"
+  },
+  {
+    "question": "What is the capital of Slovenia?",
+    "options": ["Ljubljana", "Zagreb", "Bratislava", "Prague"],
+    "answer": "Ljubljana"
+  },
+  {
+    "question": "What is the main function of the nervous system?",
+    "options": ["Sensory processing", "Movement", "Coordination", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What is the capital of Bulgaria?",
+    "options": ["Sofia", "Plovdiv", "Varna", "Burgas"],
+    "answer": "Sofia"
+  },
+  {
+    "question": "What is the primary purpose of the circulatory system?",
+    "options": ["Transport oxygen", "Digest food", "Excrete waste", "Regulate temperature"],
+    "answer": "Transport oxygen"
+  },
+  {
+    "question": "What is the capital of Moldova?",
+    "options": ["Chișinău", "Bălți", "Bender", "Tighina"],
+    "answer": "Chișinău"
+  },
+  {
+    "question": "What is the primary function of the immune system?",
+    "options": ["Fight infection", "Regulate hormones", "Produce energy", "Digest food"],
+    "answer": "Fight infection"
+  },
+  {
+    "question": "What is the capital of Kazakhstan?",
+    "options": ["Astana", "Almaty", "Shymkent", "Atyrau"],
+    "answer": "Astana"
+  },
+  {
+    "question": "What is the primary purpose of the digestive system?",
+    "options": ["Break down food", "Transport oxygen", "Regulate temperature", "Fight infection"],
+    "answer": "Break down food"
+  },
+  {
+    "question": "What is the capital of Uzbekistan?",
+    "options": ["Tashkent", "Samarkand", "Bukhara", "Nukus"],
+    "answer": "Tashkent"
+  },
+  {
+    "question": "What is the scientific study of plants called?",
+    "options": ["Botany", "Zoology", "Ecology", "Biology"],
+    "answer": "Botany"
+  },
+  {
+    "question": "What is the capital of Turkmenistan?",
+    "options": ["Ashgabat", "Mary", "Turkmenbashi", "Balkanabat"],
+    "answer": "Ashgabat"
+  },
+  {
+    "question": "What is the main purpose of the skeletal system?",
+    "options": ["Support", "Movement", "Protection", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What is the capital of Armenia?",
+    "options": ["Yerevan", "Baku", "Tbilisi", "Ankara"],
+    "answer": "Yerevan"
+  },
+  {
+    "question": "What is the primary function of the small intestine?",
+    "options": ["Nutrient absorption", "Water absorption", "Digestion", "Storage"],
+    "answer": "Nutrient absorption"
+  },
+  {
+    "question": "What is the capital of Georgia?",
+    "options": ["Tbilisi", "Batumi", "Kutaisi", "Rustavi"],
+    "answer": "Tbilisi"
+  },
+  {
+    "question": "What is the main function of the endocrine system?",
+    "options": ["Hormone regulation", "Blood circulation", "Nutrient absorption", "Waste removal"],
+    "answer": "Hormone regulation"
+  },
+  {
+    "question": "What is the capital of Azerbaijan?",
+    "options": ["Baku", "Ganja", "Lankaran", "Sumqayit"],
+    "answer": "Baku"
+  },
+  {
+    "question": "What is the most common type of rock on Earth?",
+    "options": ["Igneous", "Sedimentary", "Metamorphic", "Basalt"],
+    "answer": "Sedimentary"
+  },
+  {
+    "question": "What is the capital of Iceland?",
+    "options": ["Reykjavik", "Akureyri", "Kopavogur", "Selfoss"],
+    "answer": "Reykjavik"
+  },
+  {
+    "question": "What is the main function of the spleen?",
+    "options": ["Filtering blood", "Producing hormones", "Digesting food", "Storing nutrients"],
+    "answer": "Filtering blood"
+  },
+  {
+    "question": "What is the capital of Belarus?",
+    "options": ["Minsk", "Brest", "Gomel", "Grodno"],
+    "answer": "Minsk"
+  },
+  {
+    "question": "What is the primary function of the urinary system?",
+    "options": ["Filter waste", "Transport oxygen", "Digest food", "Regulate temperature"],
+    "answer": "Filter waste"
+  },
+  {
+    "question": "What is the capital of Estonia?",
+    "options": ["Tallinn", "Riga", "Vilnius", "Helsinki"],
+    "answer": "Tallinn"
+  },
+  {
+    "question": "What is the main function of the brain?",
+    "options": ["Regulating heartbeat", "Processing information", "Digesting food", "Producing hormones"],
+    "answer": "Processing information"
+  },
+  {
+    "question": "What is the capital of Latvia?",
+    "options": ["Riga", "Vilnius", "Tallinn", "Helsinki"],
+    "answer": "Riga"
+  },
+  {
+    "question": "What is the main function of the heart?",
+    "options": ["Pumping blood", "Regulating temperature", "Digesting food", "Producing hormones"],
+    "answer": "Pumping blood"
+  }
+]

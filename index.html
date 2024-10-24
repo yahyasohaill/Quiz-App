@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgba(128, 128, 128, 0.13);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h1{
+        text-align: center;
+    }
+   .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   h3{
+    text-align: center;
+   }
+   .quiz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: #fff;
+    width:fit-content;
+   }
+   .answers{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   }
+   .answers button{
+    background-color: azure;
+    width: 300px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    /* border: none; */
+   }
+   .level{
+    font-size: 24px;
+   }
+   button:hover{
+    background-color: rgba(80, 187, 187, 0.692);
+   }
+   #score{
+    font-size: 1.8em;
+    padding:30px;
+   }
+    
+   .next{
+    width: 95px;
+    height: 30px;
+    padding: 0px 20px;
+    text-align: center;
+    margin: 34px;
+    font-weight: bold;
+    background-color: azure;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    
+   }
+
+   #next:hover{
+    background-color: rgba(80, 187, 187, 0.692);
+       
+   }
+
+   #score-next{
+    display: flex;
+   }
+   @media (max-width:768px) {
+            .question{
+              text-align: center;
+            }
+   .quiz-container{
+          padding:10px;
+    border: 2px solid black;
+
+   }
+   .answers button{
+    padding:  5px ;
+    width:200px;
+
+   }
+   #score{
+    font-size: 1.3em;
+    padding:30px;
+   }
+   .next{
+    margin: 10px;
+    font-size: 15px;
+    padding: 0;
+   }
+   .correct{
+    color: rgba(61, 194, 61, 0.733);
+    font-size: 20px;
+    /* display: none; */
+   }
+   .wrong{
+    color: red;
+    font-size: 20px;
+    /* display: none; */
+   }
+  }
+</style>
+<body>
+    <h1>The Quiz Game</h1>
+    <div class="container">
+        <h3 class="level">
+            level : 1
+        </h3>
+        <div class="quiz-container">
+
+            <div class="question">
+               
+            </div>
+            <ul class="answers">
+                
+
+            </ul>
+
+        </div>
+        <p id="result" class="correct">
+          
+        </p>
+        <div id="score">
+
+        </div>
+        
+        <div id="score-next">
+          <button class="next" id="finish">Finish</button>
+          <button class="next" id="reset" onclick="reset()">Reset</button>
+
+        </div>
+</div>
+<audio id="beep-sound" src="beep-01a (1).wav" preload="auto"></audio>
+<script>
+  fetch('questions.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok ' + response.statusText);
+      }
+      return response.json();
+    })
+    .then(data => {
+      startQuiz(data);
+    })
+    .catch(error => {
+      console.error('There has been a problem with your fetch operation:', error);
+    });
+
+  const container = document.querySelector(".container");
+
+  document.getElementById("finish").addEventListener("click", () => {
+    const h2 = document.createElement("h2");
+    h2.innerHTML = "You scored " + CalculateScore().toFixed(1) + "%";
+    container.innerHTML = "";
+    container.appendChild(h2);
+  });
+
+  let currentQuestionIndex = 0;
+  let score = 0;
+  let level = 1;
+  const questionsPerLevel = 5;
+
+  function startQuiz(questions) {
+    loadQuestion(questions);
+    displayScore();
+  }
+
+  const optionsContainer = document.querySelector('.answers');
+  function loadQuestion(questions) {
+    if (currentQuestionIndex < questions.length) {
+      const currentQuestion = questions[currentQuestionIndex];
+      document.querySelector('.question').innerText = currentQuestion.question;
+
+      optionsContainer.innerHTML = '';
+      currentQuestion.options.forEach(option => {
+        const button = document.createElement('button');
+        button.classList.add("button");
+        button.innerText = option;
+        button.onclick = () => checkAnswer(option, questions);
+        optionsContainer.appendChild(button);
+      });
+    } else {
+      displayScore();
+    }
+  }
+const result = document.getElementById("result");
+  function checkAnswer(selectedOption, questions) {
+    if (selectedOption === questions[currentQuestionIndex].answer) {
+        score++;
+     result.innerHTML = "Correct!";
+     result.classList.add("correct")
+     result.classList.remove("wrong");
+    
+    } else {
+        playBeep();
+        document.getElementById("result").innerText = "Wrong!";
+       result.classList.add("wrong");
+       result.classList.remove("correct");
+    }
+    currentQuestionIndex++;
+    
+    // Calculate level based on questions answered
+    level = Math.floor(currentQuestionIndex / questionsPerLevel) + 1;
+
+    saveData();
+    document.querySelector('.level').innerText = `level : ${level}`;
+    
+    loadQuestion(questions);
+    displayScore();
+}
+
+  function displayScore() {
+    document.getElementById('score').innerHTML = `Your score is: ${score}/${currentQuestionIndex}`;
+  }
+
+  function CalculateScore() {
+    return currentQuestionIndex === 0 ? 0 : (score / currentQuestionIndex) * 100;
+  }
+
+  function playBeep() {
+    const beepSound = document.getElementById('beep-sound');
+    beepSound.currentTime = 0;
+    beepSound.play();
+  }
+
+  function saveData() {
+    localStorage.setItem("currentQuestionIndex", currentQuestionIndex);
+    localStorage.setItem("score", score);
+    localStorage.setItem("level", level);
+}
+
+function getData() {
+    currentQuestionIndex = parseInt(localStorage.getItem("currentQuestionIndex")) || 0;
+    score = parseInt(localStorage.getItem("score")) || 0;
+    level = parseInt(localStorage.getItem("level")) || 1;
+
+    // Update the UI elements accordingly
+    document.querySelector('.level').innerText = `level : ${level}`;
+    displayScore();
+}
+
+  document.getElementById("reset").addEventListener("click", reset);
+
+  function reset() {
+    localStorage.clear();
+    currentQuestionIndex = 0;
+    score = 0;
+    level = 1;
+    displayScore();
+    loadQuestion(); // Call this with the appropriate questions if needed
+  }
+
+  getData();
+</script>
+
+</body>
+</html>
