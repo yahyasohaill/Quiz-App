@@ -237,10 +237,14 @@ const result = document.getElementById("result");
       if (button.getAttribute('data-option') === questions[currentQuestionIndex].answer) {
             button.style.backgroundColor = 'rgba(61, 194, 61, 0.733)';
             button.style.color="white"; // Optional: highlight the correct answer
+                      button.style.transition = "background-Color 1s";
+
         }
         else if (button.getAttribute('data-option') !== questions[currentQuestionIndex].answer) {
             button.style.backgroundColor = 'tomato';
             button.style.color="white"; // Optional: highlight the correct answer
+                        button.style.transition = "background-Color 1s";
+
         }
     });
        currentQuestionIndex++;
@@ -253,7 +257,7 @@ const result = document.getElementById("result");
     document.querySelector('.level').innerText = `level : ${level}`;
     setTimeout(() => {
     loadQuestion(questions);      
-    }, 3000);
+    }, 1500);
     displayScore();
 }
 
