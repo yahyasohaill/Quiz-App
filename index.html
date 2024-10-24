@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Quiz Game</title>
+    <title>Document</title>
 </head>
 <style>
     body{
@@ -202,6 +202,7 @@
         const button = document.createElement('button');
         button.classList.add("button");
         button.innerText = option;
+        button.setAttribute('data-option', option); 
         button.onclick = () => checkAnswer(option, questions);
         optionsContainer.appendChild(button);
       });
@@ -216,22 +217,43 @@ const result = document.getElementById("result");
      result.innerHTML = "Correct!";
      result.classList.add("correct")
      result.classList.remove("wrong");
+     setTimeout(() => {
+              result.style.display = 'none';
+            }, 1200);
+            result.style.display = 'block';
     
     } else {
         playBeep();
         document.getElementById("result").innerText = "Wrong!";
        result.classList.add("wrong");
        result.classList.remove("correct");
+       setTimeout(() => {
+              result.style.display = 'none';
+            }, 1200);
+            result.style.display = 'block';
     }
-    currentQuestionIndex++;
+    const buttons = document.querySelectorAll('.answers button');
+    buttons.forEach(button => {
+      if (button.getAttribute('data-option') === questions[currentQuestionIndex].answer) {
+            button.style.backgroundColor = 'rgba(61, 194, 61, 0.733)';
+            button.style.color="white"; // Optional: highlight the correct answer
+        }
+        else if (button.getAttribute('data-option') !== questions[currentQuestionIndex].answer) {
+            button.style.backgroundColor = 'tomato';
+            button.style.color="white"; // Optional: highlight the correct answer
+        }
+    });
+       currentQuestionIndex++;
+    
     
     // Calculate level based on questions answered
     level = Math.floor(currentQuestionIndex / questionsPerLevel) + 1;
 
     saveData();
     document.querySelector('.level').innerText = `level : ${level}`;
-    
-    loadQuestion(questions);
+    setTimeout(() => {
+    loadQuestion(questions);      
+    }, 3000);
     displayScore();
 }
 
@@ -273,11 +295,11 @@ function getData() {
     currentQuestionIndex = 0;
     score = 0;
     level = 1;
-      location.reload();
+    location.reload();
     displayScore();
     loadQuestion(); // Call this with the appropriate questions if needed
   }
-
+  
   getData();
 </script>
 
