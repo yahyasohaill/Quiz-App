@@ -172,6 +172,13 @@
     h2.innerHTML = "You scored " + CalculateScore().toFixed(1) + "%";
     container.innerHTML = "";
     container.appendChild(h2);
+    reload = document.createElement("button");
+    reload.innerHTML = "Play Again";
+    reload.classList.add("next");
+    container.appendChild(reload);
+    reload.addEventListener("click",e=>{
+     location.reload();
+    })
   });
 
   let currentQuestionIndex = 0;
@@ -229,7 +236,8 @@ const result = document.getElementById("result");
 }
 
   function displayScore() {
-    document.getElementById('score').innerHTML = `Your score is: ${score}/${currentQuestionIndex}`;
+   document.getElementById('score').innerHTML = `Your score is: ${score}/${currentQuestionIndex}`;
+    
   }
 
   function CalculateScore() {
