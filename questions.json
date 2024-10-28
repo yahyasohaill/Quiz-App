@@ -149,7 +149,430 @@
       "question": "What is the focal length of a lens measured in?",
       "options": ["Meters", "Seconds", "Watts", "Volts"],
       "answer": "Meters"
+    },
+    {
+      "question": "What is the product of 2 and 3?",
+      "options": ["5", "6", "7", "8"],
+      "answer": "6"
+    },
+    {
+      "question": "What is the slope of the line represented by the equation y = 2x + 3?",
+      "options": ["2", "3", "-2", "0"],
+      "answer": "2"
+    },
+    {
+      "question": "What is the value of 7! (7 factorial)?",
+      "options": ["5040", "720", "40", "24"],
+      "answer": "5040"
+    },
+    {
+      "question": "What is the quadratic formula?",
+      "options": ["x = (-b ± √(b² - 4ac)) / 2a", "x = -b / 2a", "x = b² / 2a", "x = (b ± √(b² + 4ac)) / 2a"],
+      "answer": "x = (-b ± √(b² - 4ac)) / 2a"
+    },
+    {
+      "question": "What is the integral of 1/x dx?",
+      "options": ["ln|x| + C", "x + C", "1/x² + C", "x² + C"],
+      "answer": "ln|x| + C"
+    },
+    {
+      "question": "In a right triangle, what is the relationship between the sides called?",
+      "options": ["Pythagorean theorem", "Newton's law", "Ohm's law", "Archimedes' principle"],
+      "answer": "Pythagorean theorem"
+    },
+    {
+      "question": "What is the main component of the Earth's atmosphere?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+      "answer": "Nitrogen"
+    },
+    {
+      "question": "What is the chemical symbol for sodium?",
+      "options": ["Na", "K", "Ca", "Mg"],
+      "answer": "Na"
+    },
+    {
+      "question": "What is the unit of force in the SI system?",
+      "options": ["Newton", "Joule", "Pascal", "Watt"],
+      "answer": "Newton"
+    },
+    {
+      "question": "What is the formula for density?",
+      "options": ["Density = Mass / Volume", "Density = Volume / Mass", "Density = Mass × Volume", "Density = Mass + Volume"],
+      "answer": "Density = Mass / Volume"
+    },
+    {
+      "question": "Which element is diamond made of?",
+      "options": ["Carbon", "Oxygen", "Silicon", "Hydrogen"],
+      "answer": "Carbon"
+    },
+    {
+      "question": "What is the main source of energy for the Earth?",
+      "options": ["Wind", "Solar", "Geothermal", "Nuclear"],
+      "answer": "Solar"
+    },
+    {
+      "question": "What is the standard unit of electric charge?",
+      "options": ["Coulomb", "Ampere", "Volt", "Ohm"],
+      "answer": "Coulomb"
+    },
+    {
+      "question": "Which of the following is not a phase of matter?",
+      "options": ["Solid", "Liquid", "Gas", "Plasma", "Flux"],
+      "answer": "Flux"
+    },
+    {
+      "question": "What is the speed of light in a vacuum?",
+      "options": ["300,000 km/s", "150,000 km/s", "1,000,000 km/s", "750,000 km/s"],
+      "answer": "300,000 km/s"
+    },
+    {
+      "question": "What is the energy possessed by an object due to its motion called?",
+      "options": ["Potential energy", "Kinetic energy", "Thermal energy", "Chemical energy"],
+      "answer": "Kinetic energy"
+    },
+    {
+      "question": "What is the common name for sodium chloride?",
+      "options": ["Baking soda", "Table salt", "Sugar", "Vinegar"],
+      "answer": "Table salt"
+    },
+    {
+      "question": "What is the molecular formula for ethylene?",
+      "options": ["C2H4", "C2H6", "C3H6", "C2H2"],
+      "answer": "C2H4"
+    },
+    {
+      "question": "Which of the following has the highest boiling point?",
+      "options": ["Water", "Ethanol", "Methanol", "Benzene"],
+      "answer": "Water"
+    },
+    {
+      "question": "What is the chemical formula of ammonium sulfate?",
+      "options": ["(NH4)2SO4", "NH4SO4", "NH4S", "NH3SO4"],
+      "answer": "(NH4)2SO4"
+    },
+    {
+      "question": "Which law states that mass cannot be created or destroyed?",
+      "options": ["Law of Conservation of Energy", "Law of Conservation of Mass", "Law of Thermodynamics", "Ohm's Law"],
+      "answer": "Law of Conservation of Mass"
+    },
+    {
+      "question": "What is the principal component of natural gas?",
+      "options": ["Propane", "Butane", "Methane", "Ethane"],
+      "answer": "Methane"
+    },
+    {
+      "question": "What is the chemical formula of sulfuric acid?",
+      "options": ["H2SO4", "HCl", "NaOH", "HNO3"],
+      "answer": "H2SO4"
+    },
+    {
+      "question": "What is the acceleration of an object in free fall?",
+      "options": ["9.8 m/s^2", "0 m/s^2", "1 m/s^2", "4.9 m/s^2"],
+      "answer": "9.8 m/s^2"
+    },
+    {
+      "question": "What is the formula for calculating work?",
+      "options": ["Work = Force × Distance", "Work = Mass × Acceleration", "Work = Energy / Time", "Work = Power × Time"],
+      "answer": "Work = Force × Distance"
+    },
+    {
+      "question": "What is the atomic mass of Carbon?",
+      "options": ["12 u", "14 u", "16 u", "10 u"],
+      "answer": "12 u"
+    },
+    {
+      "question": "What is the ratio of the sides in a 45-45-90 triangle?",
+      "options": ["1:1:√2", "1:2:√2", "1:1:1", "1:√2:2"],
+      "answer": "1:1:√2"
+    },
+    {
+      "question": "What is the formula for calculating speed?",
+      "options": ["Speed = Distance / Time", "Speed = Time / Distance", "Speed = Distance + Time", "Speed = Distance - Time"],
+      "answer": "Speed = Distance / Time"
+    },
+    {
+      "question": "Which scientist discovered the structure of DNA?",
+      "options": ["Albert Einstein", "James Watson", "Rosalind Franklin", "Charles Darwin"],
+      "answer": "James Watson"
+    },
+    {
+      "question": "What is the main function of red blood cells?",
+      "options": ["To fight infection", "To transport oxygen", "To carry nutrients", "To clot blood"],
+      "answer": "To transport oxygen"
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "options": ["Heart", "Brain", "Liver", "Skin"],
+      "answer": "Skin"
+    },
+    {
+      "question": "What is the force that opposes motion called?",
+      "options": ["Gravity", "Friction", "Tension", "Pressure"],
+      "answer": "Friction"
+    },
+    {
+      "question": "Which of the following is a renewable energy source?",
+      "options": ["Natural gas", "Coal", "Wind", "Nuclear"],
+      "answer": "Wind"
+    },
+    {
+      "question": "What is the chemical symbol for potassium?",
+      "options": ["K", "P", "Na", "Mg"],
+      "answer": "K"
+    },
+    {
+      "question": "What is the power of a 100 W light bulb if it is on for 2 hours?",
+      "options": ["200 Wh", "300 Wh", "100 Wh", "400 Wh"],
+      "answer": "200 Wh"
+    },
+    {
+      "question": "What is the boiling point of water at sea level?",
+      "options": ["90°C", "100°C", "110°C", "80°C"],
+      "answer": "100°C"
+    },
+    {
+      "question": "What is the main function of the digestive system?",
+      "options": ["To circulate blood", "To break down food", "To exchange gases", "To remove waste"],
+      "answer": "To break down food"
+    },
+    {
+      "question": "What is the largest planet in our solar system?",
+      "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+      "answer": "Jupiter"
+    },
+    {
+      "question": "Which of the following is not a metal?",
+      "options": ["Iron", "Copper", "Sulfur", "Gold"],
+      "answer": "Sulfur"
+    },
+    {
+      "question": "What is the formula for calculating density?",
+      "options": ["Density = Mass / Volume", "Density = Volume / Mass", "Density = Mass + Volume", "Density = Mass - Volume"],
+      "answer": "Density = Mass / Volume"
+    },
+    {
+      "question": "What is the main component of air?",
+      "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+      "answer": "Nitrogen"
+    },
+    {
+      "question": "What is the freezing point of water?",
+      "options": ["0°C", "100°C", "32°F", "212°F"],
+      "answer": "0°C"
+    },
+    {
+      "question": "Which of the following is a diatomic molecule?",
+      "options": ["Oxygen", "Nitrogen", "Hydrogen", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "question": "What is the main purpose of a hypothesis in scientific research?",
+      "options": ["To state a conclusion", "To propose an explanation", "To collect data", "To perform calculations"],
+      "answer": "To propose an explanation"
+    },
+    {
+      "question": "What is the chemical formula for table salt?",
+      "options": ["NaCl", "KCl", "MgCl2", "CaCl2"],
+      "answer": "NaCl"
+    },
+    {
+      "question": "What is the process of a solid turning directly into a gas called?",
+      "options": ["Sublimation", "Condensation", "Evaporation", "Deposition"],
+      "answer": "Sublimation"
+    },
+    {
+      "question": "What is the unit of pressure?",
+      "options": ["Pascal", "Joule", "Newton", "Watt"],
+      "answer": "Pascal"
+    },
+    {
+      "question": "What is the chemical symbol for Iron?",
+      "options": ["Fe", "Ir", "I", "Au"],
+      "answer": "Fe"
+    },
+    {
+      "question": "Which type of bond involves the sharing of electron pairs?",
+      "options": ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
+      "answer": "Covalent bond"
+    },
+    {
+      "question": "What is the formula for calculating work?",
+      "options": ["Work = Force × Distance", "Work = Mass × Acceleration", "Work = Energy / Time", "Work = Power × Time"],
+      "answer": "Work = Force × Distance"
+    },
+    {
+      "question": "What is the name of the device used to measure atmospheric pressure?",
+      "options": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
+      "answer": "Barometer"
+    },
+    {
+      "question": "What is the pH of a neutral solution?",
+      "options": ["7", "0", "14", "4"],
+      "answer": "7"
+    },
+    {
+      "question": "Which of the following is not an acid?",
+      "options": ["HCl", "H2SO4", "NaOH", "CH3COOH"],
+      "answer": "NaOH"
+    },
+    {
+      "question": "What is the main purpose of photosynthesis?",
+      "options": ["To produce energy", "To create food", "To remove carbon dioxide", "To absorb oxygen"],
+      "answer": "To create food"
+    },
+    {
+      "question": "What is the formula for calculating kinetic energy?",
+      "options": ["KE = 1/2 mv^2", "KE = mv", "KE = mgh", "KE = Fd"],
+      "answer": "KE = 1/2 mv^2"
+    },
+    {
+      "question": "What is the primary pigment in plants that absorbs light?",
+      "options": ["Chlorophyll", "Carotene", "Xanthophyll", "Melanin"],
+      "answer": "Chlorophyll"
+    },
+    {
+      "question": "What is the formula for calculating force?",
+      "options": ["F = ma", "F = m/a", "F = mv", "F = m + a"],
+      "answer": "F = ma"
+    },
+    {
+      "question": "What is the chemical formula of methane?",
+      "options": ["CH4", "C2H6", "C3H8", "C4H10"],
+      "answer": "CH4"
+    },
+    {
+      "question": "What is the speed of sound in air?",
+      "options": ["343 m/s", "300 m/s", "1500 m/s", "500 m/s"],
+      "answer": "343 m/s"
+    },
+    {
+      "question": "What is the gravitational constant?",
+      "options": ["6.674 × 10^-11 N(m/kg)^2", "9.81 m/s^2", "3.14 m", "1.61 m"],
+      "answer": "6.674 × 10^-11 N(m/kg)^2"
+    },
+    {
+      "question": "Which law states that energy cannot be created or destroyed?",
+      "options": ["First Law of Thermodynamics", "Second Law of Thermodynamics", "Law of Conservation of Mass", "Newton's First Law"],
+      "answer": "First Law of Thermodynamics"
+    },
+    {
+      "question": "What is the chemical formula for acetic acid?",
+      "options": ["CH3COOH", "C2H5OH", "H2CO3", "C2H4O2"],
+      "answer": "CH3COOH"
+    },
+    {
+      "question": "What is the atomic number of oxygen?",
+      "options": ["6", "8", "16", "12"],
+      "answer": "8"
+    },
+    {
+      "question": "Which element has the chemical symbol 'Au'?",
+      "options": ["Silver", "Gold", "Copper", "Iron"],
+      "answer": "Gold"
+    },
+    {
+      "question": "What is the molecular weight of water?",
+      "options": ["18 g/mol", "20 g/mol", "16 g/mol", "12 g/mol"],
+      "answer": "18 g/mol"
+    },
+    {
+      "question": "What is the phase change from liquid to gas called?",
+      "options": ["Evaporation", "Condensation", "Sublimation", "Deposition"],
+      "answer": "Evaporation"
+    },
+    {
+      "question": "Which organ is primarily responsible for detoxification in the body?",
+      "options": ["Kidney", "Liver", "Lungs", "Heart"],
+      "answer": "Liver"
+    },
+    {
+      "question": "What is the main function of the respiratory system?",
+      "options": ["To circulate blood", "To exchange gases", "To break down food", "To produce hormones"],
+      "answer": "To exchange gases"
+    },
+    {
+      "question": "What is the chemical formula for ammonia?",
+      "options": ["NH3", "NH4", "HNO3", "H2O"],
+      "answer": "NH3"
+    },
+    {
+      "question": "Which of the following is a characteristic of metals?",
+      "options": ["Brittle", "Poor conductors", "Malleable", "Dull"],
+      "answer": "Malleable"
+    },
+    {
+      "question": "What is the SI unit of temperature?",
+      "options": ["Celsius", "Fahrenheit", "Kelvin", "Rankine"],
+      "answer": "Kelvin"
+    },
+    {
+      "question": "What is the process of converting a gas to a liquid called?",
+      "options": ["Condensation", "Evaporation", "Sublimation", "Vaporization"],
+      "answer": "Condensation"
+    },
+    {
+      "question": "What is the main purpose of the circulatory system?",
+      "options": ["To provide energy", "To transport nutrients", "To remove waste", "To circulate blood"],
+      "answer": "To circulate blood"
+    },
+    {
+      "question": "What is the value of Planck's constant?",
+      "options": ["6.626 × 10^-34 J·s", "3.14 × 10^8 m/s", "9.8 m/s^2", "1.6 × 10^-19 C"],
+      "answer": "6.626 × 10^-34 J·s"
+    },
+    {
+      "question": "Which of the following is a characteristic of nonmetals?",
+      "options": ["Malleable", "Ductile", "Brittle", "Good conductors"],
+      "answer": "Brittle"
+    },
+    {
+      "question": "What is the main component of proteins?",
+      "options": ["Carbohydrates", "Amino acids", "Fatty acids", "Nucleotides"],
+      "answer": "Amino acids"
+    },
+    {
+      "question": "What is the name of the process by which plants produce their food?",
+      "options": ["Respiration", "Digestion", "Photosynthesis", "Fermentation"],
+      "answer": "Photosynthesis"
+    },
+    {
+      "question": "What is the main function of the nervous system?",
+      "options": ["To control movement", "To produce hormones", "To transmit signals", "To circulate blood"],
+      "answer": "To transmit signals"
+    },
+    {
+      "question": "What is the chemical symbol for carbon dioxide?",
+      "options": ["CO2", "CO", "C2O", "C3O"],
+      "answer": "CO2"
+    },
+    {
+      "question": "What is the average atomic mass of an element based on the abundance of its isotopes?",
+      "options": ["Atomic weight", "Atomic number", "Molecular weight", "Isotopic mass"],
+      "answer": "Atomic weight"
+    },
+    {
+      "question": "What is the unit for measuring energy?",
+      "options": ["Joule", "Watt", "Pascal", "Newton"],
+      "answer": "Joule"
+    },
+    {
+      "question": "What is the main gas produced during photosynthesis?",
+      "options": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+      "answer": "Oxygen"
+    },
+    {
+      "question": "What is the primary function of enzymes?",
+      "options": ["To provide energy", "To speed up chemical reactions", "To store information", "To transport nutrients"],
+      "answer": "To speed up chemical reactions"
+    },
+    {
+      "question": "What is the chemical formula of nitric acid?",
+      "options": ["HNO3", "H2SO4", "HCl", "H3PO4"],
+      "answer": "HNO3"
+    },
+    {
+      "question": "What is the main purpose of the excretory system?",
+      "options": ["To digest food", "To remove waste", "To circulate blood", "To produce energy"],
+      "answer": "To remove waste"
     }
-    // [Add additional questions following this structure up to 200 total]
   ]
-}
