@@ -4,308 +4,350 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    body{
-        background-color: rgba(128, 128, 128, 0.13);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    h1{
-        text-align: center;
-    }
-   .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
-   h3{
-    text-align: center;
-   }
-   .quiz-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    border: 4px solid black;
-    border-radius: 10px;
-    padding: 10px 30px;
-    background-color: #fff;
-    width:fit-content;
-   }
-   .answers{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-   }
-   .answers button{
-    background-color: azure;
-    width: 300px;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 10px;
-    /* border: none; */
-   }
-   .level{
-    font-size: 24px;
-   }
-   button:hover{
-    background-color: rgba(80, 187, 187, 0.692);
-   }
-   #score{
-    font-size: 1.8em;
-    padding:30px;
-   }
-    
-   .next{
-    width: 95px;
-    height: 30px;
-    padding: 0px 20px;
-    text-align: center;
-    margin: 34px;
-    font-weight: bold;
-    background-color: azure;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    
-   }
+    <title>The Quiz Game</title>
+    <style>
+        /* Basic styles for body and container */
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
 
-   #next:hover{
-    background-color: rgba(80, 187, 187, 0.692);
-       
-   }
+        h1 {
+            font-size: 2.5em;
+            color: black;
+            margin: 20px 0;
+        }
 
-   #score-next{
-    display: flex;
-   }
-   @media (max-width:768px) {
-            .question{
-              text-align: center;
+        .container {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .quiz-container {
+            margin-top: 20px;
+        }
+
+        .question {
+            font-size: 1.5em;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .answers {
+            list-style: none;
+            padding: 0;
+        }
+
+        .answers button {
+            background-color: #007BFF;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            padding: 15px;
+            margin: 5px;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .answers button:hover {
+            background-color: #0056b3;
+        }
+
+        #timer {
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+
+        #score {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .next {
+            background-color: #28a745;
+            color: white;
+            font-size: 1em;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .next:hover {
+            background-color: #218838;
+        }
+
+        .progress {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #28a745;
+            transition: width 0.5s ease;
+        }
+
+        #darkModeToggle {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        #darkModeToggle:hover {
+            background-color: #555;
+        }
+
+        body.dark-mode {
+            background-color: #2c2c2c;
+            color: white;
+        }
+
+        body.dark-mode .container {
+            background-color: #3c3c3c;
+        }
+
+        body.dark-mode .answers button {
+            background-color: #444;
+        }
+
+        body.dark-mode .next {
+            background-color: #444;
+        }
+
+        #result {
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
             }
-   .quiz-container{
-          padding:10px;
-    border: 2px solid black;
 
-   }
-   .answers button{
-    padding:  5px ;
-    width:200px;
+            .container {
+                padding: 20px;
+            }
 
-   }
-   #score{
-    font-size: 1.3em;
-    padding:30px;
-   }
-   .next{
-    margin: 10px;
-    font-size: 15px;
-    padding: 0;
-   }
-   .correct{
-    color: rgba(61, 194, 61, 0.733);
-    font-size: 20px;
-    /* display: none; */
-   }
-   .wrong{
-    color: red;
-    font-size: 20px;
-    /* display: none; */
-   }
-  }
-</style>
+            .answers button {
+                padding: 10px;
+                font-size: 1em;
+            }
+
+            .next {
+                font-size: 0.9em;
+                padding: 8px 16px;
+            }
+
+            #timer {
+                font-size: 1.2em;
+            }
+
+            #score {
+                font-size: 1.3em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7em;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .answers button {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+
+            .next {
+                font-size: 0.8em;
+                padding: 6px 12px;
+            }
+
+            #timer {
+                font-size: 1em;
+            }
+
+            #score {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
 <body>
     <h1>The Quiz Game</h1>
+    <div id="timer">Time Left: <span id="time">15</span> seconds</div>
+    <div class="progress">
+        <div class="progress-bar"></div>
+    </div>
     <div class="container">
-        <h3 class="level">
-            level : 1
-        </h3>
+        <h3 class="level">Level : 1</h3>
         <div class="quiz-container">
-
-            <div class="question">
-               
-            </div>
-            <ul class="answers">
-                
-
-            </ul>
-
+            <div class="question"></div>
+            <ul class="answers"></ul>
         </div>
-        <p id="result" class="correct">
-          
-        </p>
-        <div id="score">
-
-        </div>
-        
+        <p id="result" class="correct"></p>
+        <div id="score">Your score is: 0</div>
         <div id="score-next">
-          <button class="next" id="finish">Finish</button>
-          <button class="next" id="reset" onclick="reset()">Reset</button>
-
+            <button class="next" id="finish">Finish</button>
+            <button class="next" id="reset">Reset</button>
         </div>
-</div>
-<audio id="beep-sound" src="beep-01a (1).wav" preload="auto"></audio>
-<script>
-  fetch('questions.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok ' + response.statusText);
-      }
-      return response.json();
-    })
-    .then(data => {
-      startQuiz(data);
-    })
-    .catch(error => {
-      console.error('There has been a problem with your fetch operation:', error);
-    });
+    </div>
+    <audio id="beep-sound" src="beep-01a (1).wav" preload="auto"></audio>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <script>
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let level = 1;
+        const questionsPerLevel = 5;
+        let timer;
+        const questionsDuration = 15;
 
-  const container = document.querySelector(".container");
+        fetch('questions.json')
+            .then(response => response.json())
+            .then(data => startQuiz(data))
+            .catch(error => console.error('Error:', error));
 
-  document.getElementById("finish").addEventListener("click", () => {
-    const h2 = document.createElement("h2");
-    h2.innerHTML = "You scored " + CalculateScore().toFixed(1) + "%";
-    container.innerHTML = "";
-    container.appendChild(h2);
-    reload = document.createElement("button");
-    reload.innerHTML = "Play Again";
-    reload.classList.add("next");
-    container.appendChild(reload);
-    reload.addEventListener("click",e=>{
-     location.reload();
-    })
-  });
+        document.getElementById("finish").addEventListener("click", () => {
+            const finalScore = calculateScore();
+            const container = document.querySelector(".container");
+            container.innerHTML = `<h2>You scored ${finalScore.toFixed(1)}%</h2>`;
+            container.innerHTML += `<button class="next" onclick="location.reload()">Play Again</button>`;
+        });
 
-  let currentQuestionIndex = 0;
-  let score = 0;
-  let level = 1;
-  const questionsPerLevel = 5;
-
-  function startQuiz(questions) {
-    loadQuestion(questions);
-    displayScore();
-  }
-
-  const optionsContainer = document.querySelector('.answers');
-  function loadQuestion(questions) {
-    if (currentQuestionIndex < questions.length) {
-      const currentQuestion = questions[currentQuestionIndex];
-      document.querySelector('.question').innerText = currentQuestion.question;
-
-      optionsContainer.innerHTML = '';
-      currentQuestion.options.forEach(option => {
-        const button = document.createElement('button');
-        button.classList.add("button");
-        button.innerText = option;
-        button.setAttribute('data-option', option); 
-        button.onclick = () => checkAnswer(option, questions);
-        optionsContainer.appendChild(button);
-      });
-    } else {
-      displayScore();
-    }
-  }
-const result = document.getElementById("result");
-  function checkAnswer(selectedOption, questions) {
-    if (selectedOption === questions[currentQuestionIndex].answer) {
-        score++;
-     result.innerHTML = "Correct!";
-     result.classList.add("correct")
-     result.classList.remove("wrong");
-     setTimeout(() => {
-              result.style.display = 'none';
-            }, 1200);
-            result.style.display = 'block';
-    
-    } else {
-        playBeep();
-        document.getElementById("result").innerText = "Wrong!";
-       result.classList.add("wrong");
-       result.classList.remove("correct");
-       setTimeout(() => {
-              result.style.display = 'none';
-            }, 1200);
-            result.style.display = 'block';
-    }
-    const buttons = document.querySelectorAll('.answers button');
-    buttons.forEach(button => {
-      if (button.getAttribute('data-option') === questions[currentQuestionIndex].answer) {
-            button.style.backgroundColor = 'rgba(61, 194, 61, 0.733)';
-            button.style.color="white"; // Optional: highlight the correct answer
-                      button.style.transition = "background-Color 1s";
-
+        function startQuiz(questions) {
+            updateLevelDisplay();
+            loadQuestion(questions);
+            displayScore();
+            startTimer(questionsDuration, document.querySelector("#time"), questions);
         }
-        else if (button.getAttribute('data-option') !== questions[currentQuestionIndex].answer) {
-            button.style.backgroundColor = 'tomato';
-            button.style.color="white"; // Optional: highlight the correct answer
-                        button.style.transition = "background-Color 1s";
 
+        function loadQuestion(questions) {
+            if (currentQuestionIndex < questions.length) {
+                const currentQuestion = questions[currentQuestionIndex];
+                document.querySelector('.question').innerText = currentQuestion.question;
+
+                const optionsContainer = document.querySelector('.answers');
+                optionsContainer.innerHTML = '';
+                currentQuestion.options.forEach(option => {
+                    const button = document.createElement('button');
+                    button.innerText = option;
+                    button.onclick = () => checkAnswer(option, questions);
+                    optionsContainer.appendChild(button);
+                });
+            } else {
+                displayScore();
+            }
         }
-    });
-       currentQuestionIndex++;
-    
-    
-    // Calculate level based on questions answered
-    level = Math.floor(currentQuestionIndex / questionsPerLevel) + 1;
 
-    saveData();
-    document.querySelector('.level').innerText = `level : ${level}`;
-    setTimeout(() => {
-    loadQuestion(questions);      
-    }, 1500);
-    displayScore();
-}
+        function checkAnswer(selectedOption, questions) {
+            if (selectedOption === questions[currentQuestionIndex].answer) {
+                score++;
+                document.getElementById("result").innerText = "Correct!";
+                document.getElementById("result").style.color = "Green";
+            } else {
+                playBeep();
+                document.getElementById("result").innerText = "Wrong! The correct answer is " + questions[currentQuestionIndex].answer;
+                document.getElementById("result").style.color = "Tomato";
+            }
 
-  function displayScore() {
-   document.getElementById('score').innerHTML = `Your score is: ${score}/${currentQuestionIndex}`;
-    
-  }
+            document.getElementById("result").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("result").style.display = "none";
+                currentQuestionIndex++;
+                level = Math.floor(currentQuestionIndex / questionsPerLevel) + 1;
+                updateLevelDisplay();
 
-  function CalculateScore() {
-    return currentQuestionIndex === 0 ? 0 : (score / currentQuestionIndex) * 100;
-  }
+                loadQuestion(questions);
+                startTimer(questionsDuration, document.querySelector("#time"), questions);
+                displayScore();
+            }, 1000);
+        }
 
-  function playBeep() {
-    const beepSound = document.getElementById('beep-sound');
-    beepSound.currentTime = 0;
-    beepSound.play();
-  }
+        function displayScore() {
+            document.getElementById('score').innerHTML = `Your score is: ${score}/${currentQuestionIndex+1}`;
+        }
 
-  function saveData() {
-    localStorage.setItem("currentQuestionIndex", currentQuestionIndex);
-    localStorage.setItem("score", score);
-    localStorage.setItem("level", level);
-}
+        function calculateScore() {
+            return currentQuestionIndex === 0 ? 0 : (score / currentQuestionIndex) * 100;
+        }
 
-function getData() {
-    currentQuestionIndex = parseInt(localStorage.getItem("currentQuestionIndex")) || 0;
-    score = parseInt(localStorage.getItem("score")) || 0;
-    level = parseInt(localStorage.getItem("level")) || 1;
+        function startTimer(duration, display, questions) {
+            clearInterval(timer);
+            let timeLeft = duration;
+            display.textContent = timeLeft;
 
-    // Update the UI elements accordingly
-    document.querySelector('.level').innerText = `level : ${level}`;
-    displayScore();
-}
+            const progressBar = document.querySelector(".progress-bar");
+            progressBar.style.width = "100%";
 
-  document.getElementById("reset").addEventListener("click", reset);
+            timer = setInterval(() => {
+                timeLeft--;
+                display.textContent = timeLeft;
+                progressBar.style.width = `${(timeLeft / duration) * 100}%`;
 
-  function reset() {
-    localStorage.clear();
-    currentQuestionIndex = 0;
-    score = 0;
-    level = 1;
-    location.reload();
-    displayScore();
-    loadQuestion(); // Call this with the appropriate questions if needed
-  }
-  
-  getData();
-</script>
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    currentQuestionIndex++;
+                    level = Math.floor(currentQuestionIndex / questionsPerLevel) + 1;
+                    updateLevelDisplay();
+                    loadQuestion(questions);
+                    startTimer(duration, display, questions);
+                    updateProgress();
+                    displayScore();
+                }
+            }, 1000);
+        }
 
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            progressBar.style.width = `${(currentQuestionIndex / questionsPerLevel) * 100}%`;
+        }
+
+        function playBeep() {
+            const beepSound = document.getElementById("beep-sound");
+            beepSound.play();
+        }
+
+        function updateLevelDisplay() {
+            document.querySelector('.level').innerText = `Level: ${level}`;
+        }
+
+        document.getElementById("reset").addEventListener("click", () => {
+            location.reload();
+        });
+
+        document.getElementById("darkModeToggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 </body>
 </html>
