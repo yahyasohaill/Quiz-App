@@ -1,5 +1,4 @@
-{
-  "questions": [
+ [
     {
       "question": "What is the derivative of sin(x)?",
       "options": ["cos(x)", "sin(x)", "-cos(x)", "-sin(x)"],
@@ -576,4 +575,4 @@
       "answer": "To remove waste"
     }
   ]
-  }
+  
